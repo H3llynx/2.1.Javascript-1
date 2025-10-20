@@ -15,3 +15,18 @@ const greatestNumber = (num1, num2) => {
     else if (num2 > num1) return `${num2} és més gran`;
     else return;
 }
+
+// 3.1 Ús enllaçat d'operadors ternaris: Escriu una expressió que utilitzi enllaços
+// d'operadors ternaris per determinar si un número és positiu, negatiu o zero.
+
+let num;
+result = (num > 0) ? "positiu" : (num < 0) ? "negatiu" : "zero";
+
+// 3.2 Operador ternari amb funcions: Crea una funció trobarMaxim que accepti tres
+// paràmetres (a, b, c) i utilitzi l'operador ternari per determinar el valor màxim.
+
+const trobarMaxim = (a, b, c) => {
+    let maxValue;
+    maxValue = (a > b && a > c) ? a : (b > a && b > c) ? b : c
+    return maxValue
+}
