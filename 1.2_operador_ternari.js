@@ -36,7 +36,7 @@ const trobarMaxim = (a, b, c) => {
 // utilitza l'operador ternari per a determinar si cada número és parell o imparell.
 
 const ParOImpar = (arr) => {
-    for (num of arr) {
+    for (let num of arr) {
         console.log(num % 2 === 0 ? `${num} : parell` : `${num} : imparell`);
     }
 }
