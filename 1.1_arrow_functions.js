@@ -31,3 +31,12 @@ class Person {
 const printNumbers = (arr) => {
     arr.forEach(num => console.log(num))
 }
+
+// 5. Funció de fletxa amb 'setTimeout': Crea una funció de fletxa que imprimeixi
+// un missatge a la consola després d'esperar 3 segons.
+
+const delayedMsg = (msg) => {
+    setTimeout(() => {
+        console.log(msg);
+    }, 3000)
+}
