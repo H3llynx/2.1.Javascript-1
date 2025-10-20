@@ -30,3 +30,13 @@ const trobarMaxim = (a, b, c) => {
     maxValue = (a > b && a > c) ? a : (b > a && b > c) ? b : c
     return maxValue
 }
+
+// 4. Operador ternari dins un bucle: Escriu una funció parOImpar que accepti un
+// array de números i utilitzi un bucle per a recórrer l'array. Dins del bucle,
+// utilitza l'operador ternari per a determinar si cada número és parell o imparell.
+
+const ParOImpar = (arr) => {
+    for (num of arr) {
+        console.log(num % 2 === 0 ? `${num} : parell` : `${num} : imparell`);
+    }
+}
