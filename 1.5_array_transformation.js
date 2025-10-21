@@ -29,3 +29,11 @@ const sum = arr.reduce((total, num) => total + num);
 //- La funció ha de retornar el resultat de la suma.
 
 const filterAndCalculate = (arr) => arr.filter(n => n >= 10).map(n => n * 2).reduce((total, num) => total + num);
+
+// 6. Every / Some: Usa every i some per a determinar si tots o alguns dels elements de l'array
+// [11, 12, 13, 14] són majors que 10, respectivament
+
+const arrayOfNumbers = [11, 12, 13, 14];
+arrayOfNumbers.some(n => n > 10); // returns true to some element
+arrayOfNumbers.every(n => n > 10); // also returns true
+
