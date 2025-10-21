@@ -26,7 +26,15 @@ for (let item in obj) {
 // la consola els números fins a trobar el número 5, llavors atura el bucle:
 
 for (let n of numeros) {
-    if (n > 5) break
+    if (n > 5) break;
     else console.log(n);
 }
 
+// 6. for-of amb index: Utilitza un bucle for-of per a imprimir a la consola cada element de
+// l'array i la seva posició (index):
+
+noms = ['Anna', 'Bernat', 'Clara'];
+
+for (let [index, nom] of noms.entries()) {
+    console.log(index, nom)
+};
