@@ -21,3 +21,12 @@ let obj = { nom: "Ona", edat: 25, ciutat: "Barcelona" };
 for (let item in obj) {
     console.log(item, obj[item]);
 }
+
+// 5. for-of amb break: Teniu una array de números. Utilitza un bucle for-of per a imprimir a 
+// la consola els números fins a trobar el número 5, llavors atura el bucle:
+
+for (let n of numeros) {
+    if (n > 5) break
+    else console.log(n);
+}
+
