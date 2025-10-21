@@ -14,3 +14,10 @@ for (let nom of noms) {
 
 let numeros = [1, 2, 3, 4, 5, 6];
 const numeros2 = numeros.filter(n => n % 2 === 0);
+
+// 4. for-in: Teniu un objecte amb parells clau-valor:
+let obj = { nom: "Ona", edat: 25, ciutat: "Barcelona" };
+// Utilitza un bucle for-in per a imprimir a la consola cada clau i el seu valor corresponent.
+for (let item in obj) {
+    console.log(item, obj[item]);
+}
