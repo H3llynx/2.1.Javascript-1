@@ -9,3 +9,15 @@ let promesa = new Promise((resolve, _reject) => {
 // un .then que imprimeixi el resultat a la consola.
 
 promesa.then(result => console.log(result));
+
+// 3. Promesa amb reject: Crea una promesa que es resolgui després de 2 segons si l'input és
+// igual a 'Hola', i que la rebutgi si l'input és qualsevol altra cosa.
+
+let input = prompt("Escribe algo:");
+let promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        if (input === "Hola") resolve("Hola, cómo estás?");
+        else reject("Error: se tiene que saludar, primero!")
+    }, 2000)
+});
+
