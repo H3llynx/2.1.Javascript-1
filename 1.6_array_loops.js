@@ -8,3 +8,9 @@ noms.forEach(nom => console.log(nom));
 for (let nom of noms) {
     console.log(nom);
 }
+
+// 3. filter: Teniu una array de números. Utilitza filter per a crear una nova array que només
+// contingui els números parells.
+
+let numeros = [1, 2, 3, 4, 5, 6];
+const numeros2 = numeros.filter(n => n % 2 === 0);
