@@ -12,5 +12,11 @@ const newArray2 = initialArray.filter(i => i % 2 === 0);
 // 3. Find: Teniu una array de números [1, 10 , 8, 11]. Utilitza la funció find per a trobar el
 // primer número que és major a 10.
 
-const array = [1, 10, 8, 11]
+const array = [1, 10, 8, 11];
 const firstNumOverTen = array.find(n => n > 10);
+
+// 4. Reduce: Teniu una array de números [13, 7, 8, 21]. Fes servir la funció reduce per a
+// calcular la suma total dels números.
+
+const arr = [13, 7, 8, 21];
+const sum = arr.reduce((total, num) => total + num);
