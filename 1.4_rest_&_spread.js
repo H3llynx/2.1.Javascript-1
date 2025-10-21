@@ -36,5 +36,5 @@ objecte2.nombre = "Fidjie";
 // i després assignar la resta dels elements a una tercera variable.
 
 let array = ["this", "is", "my", "array", 1, 2, 3];
-let [element1, element2, ...reste] = array;
+let [element1, element2, ...rest] = array;
 
