@@ -29,7 +29,7 @@ const objecte1 = {
 const objecte2 = { ...objecte1 };
 objecte2.nombre = "Fidjie";
 
-//console.log(objecte1, objecte2)
+console.log(objecte1, objecte2)
 
 // 4. Rest en Destructuring: Crea una array amb diversos elements. Utilitza
 // destructuring i l'operador rest per a assignar els primers dos elements a variables,
@@ -38,3 +38,27 @@ objecte2.nombre = "Fidjie";
 let array = ["this", "is", "my", "array", 1, 2, 3];
 let [element1, element2, ...rest] = array;
 
+// 5. Spread en Funcions: Crea una funció que accepti tres arguments. Després, crea una
+// array amb tres elements i crida la funció utilitzant l'operador spread amb aquesta
+// array.
+
+const myFunction = (a, b, c) => {
+    console.log(a + 1, b + 2, c + 3)
+}
+const myArray = [4, 6, 1]
+myFunction(...myArray)
+
+// 6. Fusionant Objectes amb Spread: Crea dos objectes amb propietats diferents. Utilitza
+// l'operador spread per a fusionar aquests dos objectes en un de nou.
+
+const cat = {
+    name: "Pixie",
+    color: "gris",
+}
+
+const dog = {
+    paws: 4,
+    ability: "infinite hunger"
+}
+
+const pet = { ...cat, ...dog }
