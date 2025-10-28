@@ -6,6 +6,11 @@ const array1 = ["this", "is", "my", 1, "st", "array"];
 const array2 = [6, 9, 11, 23, 60];
 const array3 = [...array1, ...array2];
 
+console.log(array3) //  [ 'this', 'is', 'my', 1, 'st', 'array', 6, 9, 11, 23, 60 ]
+
+
+
+
 // 2. Operador Rest en Funcions: Crea una funció 'suma' que utilitzi l'operador rest
 // per a acceptar un nombre indeterminat d'arguments i retornar la seva suma.
 const suma = (...numbers) => {
@@ -15,6 +20,11 @@ const suma = (...numbers) => {
     }
     return total;
 }
+
+console.log(suma(5, 4, 3, 1, 9)) // 22
+
+
+
 
 // 3. Copiant objectes amb Spread: Crea un objecte 'objecte1'. Després crea un segon
 // objecte, 'objecte2', que sigui una còpia de 'objecte1' utilitzant l'operador spread.
@@ -29,7 +39,10 @@ const objecte1 = {
 const objecte2 = { ...objecte1 };
 objecte2.nombre = "Fidjie";
 
-console.log(objecte1, objecte2)
+console.log(objecte1, objecte2) // [ { raza: 'gato', nombre: 'Pixie', color: 'gris' }, { raza: 'gato', nombre: 'Fidjie', color: 'gris' } ]
+
+
+
 
 // 4. Rest en Destructuring: Crea una array amb diversos elements. Utilitza
 // destructuring i l'operador rest per a assignar els primers dos elements a variables,
@@ -37,6 +50,13 @@ console.log(objecte1, objecte2)
 
 let array = ["this", "is", "my", "array", 1, 2, 3];
 let [element1, element2, ...rest] = array;
+
+console.log(element1) // 'this'
+console.log(element2) // 'is'
+console.log(rest) // [ 'my', 'array', 1, 2, 3 ]
+
+
+
 
 // 5. Spread en Funcions: Crea una funció que accepti tres arguments. Després, crea una
 // array amb tres elements i crida la funció utilitzant l'operador spread amb aquesta
@@ -46,7 +66,10 @@ const myFunction = (a, b, c) => {
     console.log(a + 1, b + 2, c + 3)
 }
 const myArray = [4, 6, 1]
-myFunction(...myArray)
+myFunction(...myArray) // [ 5, 8, 4 ]
+
+
+
 
 // 6. Fusionant Objectes amb Spread: Crea dos objectes amb propietats diferents. Utilitza
 // l'operador spread per a fusionar aquests dos objectes en un de nou.
@@ -62,3 +85,4 @@ const dog = {
 }
 
 const pet = { ...cat, ...dog }
+console.log(pet) // { name: 'Pixie', color: 'gris', paws: 4, ability: 'infinite hunger' }
