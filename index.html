@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Probando Ejercicios</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #222;
+            color: violet;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Async / Await</h1>
+        <p>Test of Exercici 1.7: Promises & Async/Await</p>
+        <i>Nivell 1 - Exercici 3</i>
+        <output></output>
+    </main>
+    <script>
+        let input = prompt("Escribe algo:");
+        let promesa = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (input === "Hola") resolve("Hola, cómo estás?");
+                else reject("Error: se tiene que saludar, primero!")
+            }, 2000)
+        });
+        const printPromise = async (promise) => {
+            let result = await promise;
+            document.querySelector("output").textContent = result;
+        };
+        printPromise(promesa);
+    </script>
+</body>
+
+</html>
